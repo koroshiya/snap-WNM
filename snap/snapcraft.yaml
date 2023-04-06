@@ -32,3 +32,9 @@ layout:
     symlink: $SNAP_DATA/saves
   $SNAP/game/cache:
     symlink: $SNAP_DATA/cache
+
+architectures:
+  - build-on: amd64
+  - build-on: arm64
+  - build-on: armhf
+
