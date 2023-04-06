@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Wander No More
+GenericName=Wander No More
+Comment=A visual novel telling the story of a rogue samurai
+Exec=zetsubougames-wandernomore
+Icon=${SNAP}/meta/gui/zetsubougames-wandernomore.png
+Terminal=false
+Type=Application
+Keywords=game;wander;no;more;
+Categories=Game

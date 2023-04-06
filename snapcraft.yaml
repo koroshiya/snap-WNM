@@ -1,0 +1,33 @@
+name: zetsubougames-wandernomore
+base: core20
+version: '1.2.1'
+summary: A visual novel telling the story of a rogue samurai #79 char long summary
+description: |
+  A visual novel telling the story of a rogue samurai
+
+grade: stable
+confinement: strict
+
+website: https://zetsubou.games/
+license: Proprietary
+
+parts:
+  app:
+    source: https://cdn.zetsubou.games/Flatpak/WanderNoMore/builds/v1.2.2-all.tar.bz2
+    plugin: dump
+
+apps:
+  zetsubougames-wandernomore:
+    command: WanderNoMore.sh
+    extensions: [gnome-3-38]
+    plugs:
+      - x11
+      - opengl
+      - audio-playback
+      - joystick
+
+layout:
+  $SNAP/game/saves:
+    symlink: $SNAP_DATA/saves
+  $SNAP/game/cache:
+    symlink: $SNAP_DATA/cache
